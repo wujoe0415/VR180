@@ -24,7 +24,7 @@ using UnityEngine;
 /// </summary>
 public class CameraPointer : MonoBehaviour
 {
-    private const float _maxDistance = 10;
+    private const float _maxDistance = 100;
     private GameObject _gazedAtObject = null;
 
     /// <summary>
@@ -37,6 +37,7 @@ public class CameraPointer : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(transform.position, transform.forward, out hit, _maxDistance))
         {
+            Debug.Log(hit.transform.gameObject.name);
             // GameObject detected in front of the camera.
             if (_gazedAtObject != hit.transform.gameObject)
             {

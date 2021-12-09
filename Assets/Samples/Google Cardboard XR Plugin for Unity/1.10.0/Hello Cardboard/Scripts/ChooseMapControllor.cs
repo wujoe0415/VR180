@@ -35,13 +35,13 @@ public class ChooseMapControllor : MonoBehaviour
         transition = GameObject.Find("GameCanvas").GetComponent<Animator>();
     }
 
-    /*private void Update()
+    private void Update()
     {
         if(Input.GetMouseButton(0))
         {
             OnPointerEnter();
         }
-    }*/
+    }
     /// <summary>
     /// This method is called by the Main Camera when it starts gazing at this GameObject.
     /// </summary>
