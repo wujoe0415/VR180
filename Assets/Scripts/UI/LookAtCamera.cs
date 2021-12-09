@@ -9,6 +9,7 @@ public class LookAtCamera : MonoBehaviour
     void Start()
     {
         cam = GameObject.Find("Main Camera");
+        transform.LookAt(cam.transform);
     }
 
     // Update is called once per frame
