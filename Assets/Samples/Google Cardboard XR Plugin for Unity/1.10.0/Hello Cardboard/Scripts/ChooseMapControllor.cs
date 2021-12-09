@@ -1,17 +1,28 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ChooseMapControllor : MonoBehaviour
 {
     /// <summary>
     /// The material to use when this object is inactive (not being gazed at).
     /// </summary>
+    [Header("ChangeMaterial")]
     public Material InactiveMaterial;
-    
     public Material GazedAtMaterial;
     
     private Renderer _myRenderer;
+
+    [Header("SceneManager")]
+    [SerializeField]
+    public Animator transition;
+
+    [Range(0.0f, 1.0f)]
+    public float transitionTime = 1.0f;
+
+    public int nextSceneIndex = 1;
+    // Update is called once per frame
 
     /// <summary>
     /// Start is called before the first frame update.
@@ -21,6 +32,7 @@ public class ChooseMapControllor : MonoBehaviour
         _myRenderer = GetComponent<Renderer>();
         InactiveMaterial = _myRenderer.material;
         SetMaterial(false);
+        transition = GameObject.Find("GameCanvas").GetComponent<Animator>();
     }
 
     /*private void Update()
@@ -68,5 +80,23 @@ public class ChooseMapControllor : MonoBehaviour
         {
             _myRenderer.material = gazedAt ? GazedAtMaterial : InactiveMaterial;
         }
+    }
+
+    // Scene Transition 
+    public void TranstionScene()
+    {
+        Debug.Log("in");
+        StartCoroutine("Transtion", nextSceneIndex);
+    }
+
+    IEnumerator Transtion(int nextSceneIndex)
+    {
+        // Animation
+        transition.SetTrigger("Start");
+        // WaitForSecond
+        yield return new WaitForSeconds(transitionTime);
+        // SwitchScene
+        SceneManager.LoadScene(nextSceneIndex);
+
     }
 }
