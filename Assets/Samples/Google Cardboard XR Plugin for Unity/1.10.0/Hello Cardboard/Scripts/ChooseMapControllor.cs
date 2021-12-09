@@ -65,6 +65,7 @@ public class ChooseMapControllor : MonoBehaviour
     public void OnPointerClick()
     {
         // SeneSwitcher
+        TranstionScene();
     }
 
     /// <summary>

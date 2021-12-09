@@ -6,10 +6,52 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
+    path: Assets/Scenes/MapManu.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Samples/Google Cardboard XR Plugin for Unity/1.10.0/Hello Cardboard/Scenes/HelloCardboard.unity
     guid: 145a2a45d7bc746b19cb68410368bf96
+  - enabled: 1
+    path: Assets/Scenes/Animals/sunbear.unity
+    guid: 9461c8e68268920448daa8313e3b15ce
+  - enabled: 1
+    path: Assets/Scenes/Animals/Alpaca.unity
+    guid: ff19b86491703c949ac58fcb5bc19fbe
+  - enabled: 1
+    path: Assets/Scenes/Animals/BengalTiger.unity
+    guid: c560ae8087c6e2a429ed8ce05cc90723
+  - enabled: 1
+    path: Assets/Scenes/Animals/Coatimundis.unity
+    guid: 764223a0d1f68e142b4840fe27178097
+  - enabled: 1
+    path: Assets/Scenes/Animals/Emu.unity
+    guid: b9fce324406ccc845b6f345798e57997
+  - enabled: 1
+    path: Assets/Scenes/Animals/Flamingo.unity
+    guid: fc26ddeb76d72b14baf6035e24609eb6
+  - enabled: 1
+    path: Assets/Scenes/Animals/guinea-pigs.unity
+    guid: eeecd877f4dc6b6479e47d7ef6422626
+  - enabled: 1
+    path: Assets/Scenes/Animals/Hippo.unity
+    guid: 3a5893617e265ca43b5a5b9ba5372118
+  - enabled: 1
+    path: Assets/Scenes/Animals/HylobatesMuelleri.unity
+    guid: bc537862003bb3a48af0d7ee55ce9a08
+  - enabled: 1
+    path: Assets/Scenes/Animals/MacacaFascicularis.unity
+    guid: 66b2f1330687f544fb671cc124b1fe8f
+  - enabled: 1
+    path: Assets/Scenes/Animals/MacaqueMonkey.unity
+    guid: c0dbe72a78763044594cb20be0fcc792
+  - enabled: 1
+    path: Assets/Scenes/Animals/orangutan-sounds.unity
+    guid: 4fb1de2869d9f2746a520843fc01d3d3
+  - enabled: 1
+    path: Assets/Scenes/Animals/Raccoon.unity
+    guid: 6c9dc0745b8c0c446abf1aaea8df2be6
+  - enabled: 1
+    path: Assets/Scenes/Places/Frontier.unity
+    guid: 2aec7027bbedb3148b5eaf3ca0ad2d85
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 73cc1fff9a5d98c43a48ea58a1368b54, type: 2}
