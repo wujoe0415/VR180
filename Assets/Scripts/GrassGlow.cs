@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ChooseMapControllor : MonoBehaviour
+public class GrassGlow : MonoBehaviour
 {
     /// <summary>
     /// The material to use when this object is inactive (not being gazed at).
@@ -11,7 +11,7 @@ public class ChooseMapControllor : MonoBehaviour
     [Header("ChangeMaterial")]
     public Material InactiveMaterial;
     public Material GazedAtMaterial;
-    
+
     private Renderer _myRenderer;
 
     [Header("SceneManager")]
@@ -23,7 +23,8 @@ public class ChooseMapControllor : MonoBehaviour
 
     public int nextSceneIndex = 1;
     // Update is called once per frame
-
+    public GameObject[] grassAnimals;
+    public Material[] grassMaterials;
     /// <summary>
     /// Start is called before the first frame update.
     /// </summary>
@@ -33,7 +34,16 @@ public class ChooseMapControllor : MonoBehaviour
         InactiveMaterial = _myRenderer.material;
         SetMaterial(false);
         transition = GameObject.Find("GameCanvas").GetComponent<Animator>();
+        grassAnimals = GameObject.FindGameObjectsWithTag("Grass");
     }
+
+    /*private void Update()
+    {
+        if (Input.GetMouseButton(0))
+        {
+            OnPointerEnter();
+        }
+    }*/
     /// <summary>
     /// This method is called by the Main Camera when it starts gazing at this GameObject.
     /// </summary>
@@ -71,7 +81,27 @@ public class ChooseMapControllor : MonoBehaviour
     {
         if (InactiveMaterial != null && GazedAtMaterial != null)
         {
-            _myRenderer.material = gazedAt ? GazedAtMaterial : InactiveMaterial;
+            //_myRenderer.material = gazedAt ? GazedAtMaterial : InactiveMaterial;
+            if(gazedAt)
+            {
+                foreach(GameObject grassAnimal in grassAnimals)
+                {
+                    grassAnimal.GetComponent<Renderer>().material = GazedAtMaterial;
+                }
+            }
+            else
+            {
+                foreach (GameObject grassAnimal in grassAnimals)
+                {
+                    grassAnimal.GetComponent<Renderer>().material = InactiveMaterial;
+                }
+                
+                /*foreach (GameObject grassAnimal in grassAnimals)
+                {
+                    for(int i = 0 ; i < grassMaterials.Length;i++)
+                    grassAnimal.GetComponent<Renderer>().material = grassMaterials[i];
+                }*/
+            }
         }
     }
 

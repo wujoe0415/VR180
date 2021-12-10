@@ -123,6 +123,23 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &530957621 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4198821828992203096, guid: 8436c561caee5684c8df122f6fe1c583, type: 3}
+  m_PrefabInstance: {fileID: 8247523075724776538}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &530957622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 530957621}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d3b55da54fbe5504fadfd5704913b8cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -945,6 +962,30 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4198821830632624045, guid: 8436c561caee5684c8df122f6fe1c583, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198821830632624045, guid: 8436c561caee5684c8df122f6fe1c583, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198821830632624045, guid: 8436c561caee5684c8df122f6fe1c583, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198821830632624045, guid: 8436c561caee5684c8df122f6fe1c583, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4198821830632624045, guid: 8436c561caee5684c8df122f6fe1c583, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 8247523075298062220, guid: 8436c561caee5684c8df122f6fe1c583, type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 1cc299c23b95fef4e84af6570592068a, type: 3}
     - target: {fileID: 8247523075469033834, guid: 8436c561caee5684c8df122f6fe1c583, type: 3}
       propertyPath: m_audioClip
       value: 
