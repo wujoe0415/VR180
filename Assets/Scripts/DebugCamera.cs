@@ -4,15 +4,20 @@ using UnityEngine;
 
 public class DebugCamera : MonoBehaviour
 {
-    private const float _maxDistance = 100;
+    public const float _maxDistance = 100;
     private GameObject _gazedAtObject = null;
 
     [Header("MouseLookProperties")]
     public float mouseSenesitvity = 1.0f;
     float xRotation = 0f;
     float debugx = 0f, debugy = 0f;
-    
+    public GameObject circle;
     // Update is called once per frame
+
+    private void Awake()
+    {
+        Cursor.lockState = CursorLockMode.Locked;
+    }
     void Update()
     {
         /*float mouseX = Input.GetAxis("Mouse X") * mouseSenesitvity * Time.deltaTime;
@@ -26,9 +31,12 @@ public class DebugCamera : MonoBehaviour
         // Casts ray towards camera's forward direction, to detect if a GameObject is being gazed
         // at.
         RaycastHit hit;
-        Ray ray = GameObject.Find("Main Camera").GetComponent<Camera>().ScreenPointToRay(Input.mousePosition);
-        if (Physics.Raycast(ray, out hit))
+        //Ray ray = GameObject.Find("Main Camera").GetComponent<Camera>().ScreenPointToRay(/*circle.transform.position*/Input.mousePosition);
+        //Debug.Log("circle.transform.position : " + circle.transform.position);
+        //Debug.Log(" Input.mousePosition : " + Input.mousePosition);
+        if (Physics.Raycast(transform.position, circle.transform.forward, out hit, _maxDistance)/*Physics.Raycast(ray, out hit)*/)
         {
+            Debug.Log(hit.transform.gameObject.name);
             // GameObject detected in front of the camera.
             if (_gazedAtObject != hit.transform.gameObject)
             {
