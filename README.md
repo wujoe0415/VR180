@@ -5,7 +5,7 @@ This project is an assignment to CYCU VR180 Interaction Design Class.
 ## APK File
 This link contains the final apk file.
 It is for Android only, and user can download directly by Android cellphone. Alternativly, downloading with computer and transmitting to Android cellphone.  
-[file.apk]()
+[file.apk](https://drive.google.com/drive/folders/1Ht5i6OuEvXUnGdxYJgUOniMSvljXshPh)
 
 ## Code Discripition
 + Camera to point
