@@ -30,7 +30,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Animals/Flamingo.unity
     guid: fc26ddeb76d72b14baf6035e24609eb6
   - enabled: 1
-    path: Assets/Scenes/Animals/guinea-pigs.unity
+    path: Assets/Scenes/Animals/CuteAnimals.unity
     guid: eeecd877f4dc6b6479e47d7ef6422626
   - enabled: 1
     path: Assets/Scenes/Animals/Hippo.unity
@@ -48,10 +48,13 @@ EditorBuildSettings:
     path: Assets/Scenes/Animals/orangutan-sounds.unity
     guid: 4fb1de2869d9f2746a520843fc01d3d3
   - enabled: 1
-    path: Assets/Scenes/Animals/Raccoon.unity
-    guid: 6c9dc0745b8c0c446abf1aaea8df2be6
-  - enabled: 1
     path: Assets/Scenes/Places/Frontier.unity
     guid: 2aec7027bbedb3148b5eaf3ca0ad2d85
+  - enabled: 1
+    path: Assets/Scenes/Animals/Grass.unity
+    guid: b837c6387cb49e645893ca1bf4253415
+  - enabled: 1
+    path: Assets/Scenes/Places/Hill.unity
+    guid: 32ea30eae50bb664bb1e0ef5d4055bb5
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 73cc1fff9a5d98c43a48ea58a1368b54, type: 2}
