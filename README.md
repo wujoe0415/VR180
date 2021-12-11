@@ -1,6 +1,6 @@
 # VR180
 ## Discipition
-This project is an assignment to CYCU VR180 Interaction Design Class.
+This project is an assignment to NYCU VR180 Interaction Design Class.
 
 ## APK File
 This link contains the final apk file.
